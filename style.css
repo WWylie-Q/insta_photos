@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat");
+
+.Container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.Picture {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+  user-select: none;
+  cursor: pointer;
+}
+
+.Picture-img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+
+.Picture-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.Network {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.Network img {
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  vertical-align: middle;
+}
+
+/* --------------------- */
+/* Other styles          */
+/* --------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Caveat', serif;
+  overflow: hidden;
+}
+audio {
+  display: none;
+}
+
+p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: rgba(165, 172, 175);
+  font-size: 20px;
+}
+
+button {
+  font-size: 16px;
+  color: #69BE28;
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  padding: 15px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background: rgba(0, 34, 68);
+  box-shadow: 2px 2px 4px rgba(105, 190, 40);
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+
+button.fade:hover {
+  opacity: 0.8;
+}
+
+.fade {
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
